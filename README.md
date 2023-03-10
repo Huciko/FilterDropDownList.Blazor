@@ -12,7 +12,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
 
 #### Basic Usage
 
-```html
+```razor
 <h3>Component</h3>
 
 <FilterSelectComponent @bind-BindValue="SelectedPerson"
