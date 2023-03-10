@@ -27,7 +27,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
 </FilterSelectComponent>
 
 @code {
-
+```c#
     public class PersonModel
     {
         public int ID { get; set; }
