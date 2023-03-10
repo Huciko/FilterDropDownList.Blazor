@@ -1,4 +1,20 @@
-﻿body .search-dropdown-pop-active-fixed-bg {
+﻿:root {
+    /* Secondary Button */
+    --vcare-btn-secondary-bg-color: 26,169,184;
+
+    --vcare-btn-color-opacity: 1;
+    --vcare-btn-bg-color-opacity: 1;
+    --vcare-btn-color: 255,255,255;
+   
+}
+
+[data-bs-theme=dark] {
+    --vcare-btn-color-opacity: 0.8;
+    --vcare-btn-bg-color-opacity: 0.7;
+}
+
+
+body .search-dropdown-pop-active-fixed-bg {
     position: fixed;
     background: #a1a1a159;
     width: 100vw;
