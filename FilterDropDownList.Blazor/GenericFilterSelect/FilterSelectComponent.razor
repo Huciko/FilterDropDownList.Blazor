@@ -1,0 +1,47 @@
+﻿@inherits FilterSelectComponentBase<TData>
+@typeparam TData
+
+<div @onmousedown="ClosePop" class="search-dropdown-pop @PopWrapperCssClass @(IsFixed ? "search-dropdown-pop-active-fixed-bg" : "")">
+    <div @onmousedown="ClosePop" class="search-dropdown-pop @(IsFixed ? "search-dropdown-pop-wrapper" : "") ">
+
+        <div class="search-select-component @CssClass">
+
+            <div @onmousedown:stopPropagation="true" class="dropdown">
+                @{
+                    <button @onmousedown="ToggleDropdown" class="text-body bg-body btn btn-sm dropdown-toggle form-floating" type="button" disabled="@Disabled">
+                        <span class="search-select-selected">@(ReferenceEquals(BindValue, NoItemSelectedItem) ? RenderFragmentInitialSelectText() : RowTemplate(BindValue))</span>
+                        <span class="label">@Label</span>
+                    </button>
+
+                    if (Data is not null)
+                    {
+                        <div class="dropdown-menu @Visible" aria-aria-labelledby="dropdownMenuButton">
+                            <input @ref="SearchBox" @onfocusout="DropdownFocusOutHandler" class="text-body bg-body dropdown-input" @bind="SearchTerm" @oninput="SearchTermChanged" type="text" placeholder="Search..">
+                            <ul>
+                                @if (FilteredListItems.Any() == false)
+                                {
+                                    <li class="mt-2"><i class="fa-solid fa-face-meh fa-lg me-2 meh-face-color "></i>no records</li>
+                                }
+                                else
+                                {
+                                    <li class="@(ReferenceEquals(NoItemSelectedItem, SelectedListItem) ? "active" : "")" @onmousedown="() => OnSelectListItemAsync(NoItemSelectedItem)">
+                                        @InitialSelectText
+                                    </li>
+
+                                    <Virtualize Items="@FilteredListItems" Context="listItem" TItem="TData">
+                                        @{
+                                            <li class="@(ReferenceEquals(listItem, SelectedListItem) ? "active" : "")" @onmousedown="() => OnSelectListItemAsync(listItem)">
+                                                @RowTemplate(listItem)
+                                            </li>
+                                        }
+                                    </Virtualize>
+                                }
+                            </ul>
+                        </div>
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
