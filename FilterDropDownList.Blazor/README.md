@@ -51,7 +51,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
         // FilterSelectComponentEventCallbackArgs model has two properties
         // SelectedItem, a reference to the selected iten in the dropdown
         // ExtraParameter, an extra optional parameter (object) to pass together the SelectedItem
-        string parsonName = args.SelectedItem.Name;
+        string personName = args.SelectedItem.Name;
     }
 }
 ```
