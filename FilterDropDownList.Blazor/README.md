@@ -6,13 +6,13 @@ Install form [NuGet](https://www.nuget.org/packages/FilterDropDownList.Blazor/)
 #### Add Imports in _Imports.razor file
 To avoid having to add using statements for FilterDropDownList.Blazor to lots of components in your project, it's recommended that you add the following to your root _Imports.razor file. This will make the following usings available to all component in that project.
 
-```c#
+```razor
 @using FilterDropDownList.Blazor.GenericFilterSelect
 ```
 
 #### Basic Usage
 
-```c#
+```razor
 <h3>Component</h3>
 
 <FilterSelectComponent @bind-BindValue="SelectedPerson"
@@ -51,11 +51,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
         // FilterSelectComponentEventCallbackArgs model has two properties
         // SelectedItem, a reference to the selected iten in the dropdown
         // ExtraParameter, an extra optional parameter (object) to pass together the SelectedItem
-        string personName = args.SelectedItem.Name;
+        string parsonName = args.SelectedItem.Name;
     }
 }
-
 ```
-
-
-
