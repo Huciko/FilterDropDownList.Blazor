@@ -6,7 +6,7 @@ Install form [NuGet](https://www.nuget.org/packages/FilterDropDownList.Blazor/)
 #### Add Imports in _Imports.razor file
 To avoid having to add using statements for FilterDropDownList.Blazor to lots of components in your project, it's recommended that you add the following to your root _Imports.razor file. This will make the following usings available to all component in that project.
 
-```c#
+```razor
 @using FilterDropDownList.Blazor.GenericFilterSelect
 ```
 
