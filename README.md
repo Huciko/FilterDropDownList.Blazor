@@ -26,7 +26,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
     </RowTemplate>
 </FilterSelectComponent>
 ```
-```
+
 @code {
 ```c#
     public class PersonModel
