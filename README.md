@@ -26,9 +26,9 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
     </RowTemplate>
 </FilterSelectComponent>
 ```
-
+```
 @code {
-```c#
+  ```c#
     public class PersonModel
     {
         public int ID { get; set; }
@@ -54,6 +54,6 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
         // ExtraParameter, an extra optional parameter (object) to pass together the SelectedItem
         string parsonName = args.SelectedItem.Name;
     }
-```
+  ```
 }
-
+```
