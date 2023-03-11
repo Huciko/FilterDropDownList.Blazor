@@ -2,7 +2,7 @@
 # FilterDropDownList.Blazor
 
 A filterable dropdown list component for Blazor applications.
-
+ 
 ## Features
 * Filter on multiple properties
 * Uses the Virtualize component for rendering performance
