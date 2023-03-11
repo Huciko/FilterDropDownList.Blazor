@@ -1,4 +1,8 @@
 
+# FilterDropDownList.Blazor
+
+A simple filterable dropdown list for Blazor applications.
+
 ## Usage/Examples
 
 Install form [NuGet](https://www.nuget.org/packages/FilterDropDownList.Blazor/)
