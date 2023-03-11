@@ -7,12 +7,6 @@ namespace FilterDropDownList.Blazor.GenericFilterSelect;
 
 public class FilterSelectComponentBaseProperties<TData> : ComponentBase
 {
-
-    /// <summary>
-    /// List items of type <see cref="TData"/>
-    /// </summary>
-    [Parameter, EditorRequired] public IEnumerable<TData> Data { get; set; } = Enumerable.Empty<TData>();
-
     /// <summary>
     /// Component parameter Bind value
     /// </summary>
@@ -24,12 +18,17 @@ public class FilterSelectComponentBaseProperties<TData> : ComponentBase
     [Parameter] public EventCallback<TData> BindValueChanged { get; set; }
 
     /// <summary>
+    /// List items of type <see cref="TData"/>
+    /// </summary>
+    [Parameter, EditorRequired] public IEnumerable<TData> Data { get; set; } = Enumerable.Empty<TData>();
+
+    /// <summary>
     /// Content to render
     /// </summary>
     [Parameter, EditorRequired] public RenderFragment<TData> RowTemplate { get; set; } = default!;
 
     /// <summary>
-    /// Method to trigger when an item is selected.
+    /// EventCallback method to trigger when an item is selected.
     /// </summary>
     [Parameter] public EventCallback<FilterSelectComponentEventCallbackArgs<TData>> OnSelectListItem { get; set; }
 
@@ -51,7 +50,7 @@ public class FilterSelectComponentBaseProperties<TData> : ComponentBase
     [Parameter] public string? Label { get; set; } = "Label";
 
     /// <summary>
-    /// Set an extra object alongside with the <see cref="SelectedListItem"/> for the select component.
+    /// Set an extra object together with the <see cref="SelectedListItem"/> for the select component.
     /// Can be accessed via <see cref="OnSelectListItem"/> "EventCallback" when an item is selected.
     /// </summary>
     [Parameter] public object? OnSelectListItemExtraParameter { get; set; }
@@ -72,7 +71,7 @@ public class FilterSelectComponentBaseProperties<TData> : ComponentBase
     [Parameter] public string? PopWrapperCssClass { get; set; }
 
     /// <summary>
-    /// Boolean indicating whether the search component will popup in UI as a dialog
+    /// Boolean indicating whether the component will popup in UI as a dialog
     /// </summary>
     [Parameter] public bool Popup { get; set; } = false;
 

@@ -8,7 +8,7 @@
 
             <div @onmousedown:stopPropagation="true" class="dropdown">
                 @{
-                    <button @onmousedown="ToggleDropdown" class="text-body bg-body btn btn-sm dropdown-toggle form-floating" type="button" disabled="@Disabled">
+                    <button @onmousedown="ToggleDropdown" class="btn btn-sm dropdown-toggle form-floating" type="button" disabled="@Disabled">
                         <span class="search-select-selected">@(ReferenceEquals(BindValue, NoItemSelectedItem) ? RenderFragmentInitialSelectText() : RowTemplate(BindValue))</span>
                         <span class="label">@Label</span>
                     </button>
@@ -16,7 +16,7 @@
                     if (Data is not null)
                     {
                         <div class="dropdown-menu @Visible" aria-aria-labelledby="dropdownMenuButton">
-                            <input @ref="SearchBox" @onfocusout="DropdownFocusOutHandler" class="text-body bg-body dropdown-input" @bind="SearchTerm" @oninput="SearchTermChanged" type="text" placeholder="Search..">
+                            <input @ref="SearchBox" @onfocusout="DropdownFocusOutHandler" class="dropdown-input" @bind="SearchTerm" @oninput="SearchTermChanged" type="text" placeholder="Search..">
                             <ul>
                                 @if (FilteredListItems.Any() == false)
                                 {

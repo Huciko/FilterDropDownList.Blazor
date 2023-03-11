@@ -5,12 +5,16 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <Title>FilterDropDownList.Blazor</Title>
-    <Description>A simple filterable dropdown list for blazor applications</Description>
+    <Description>A filterable dropdown list component for blazor applications</Description>
     <Copyright />
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <AnalysisLevel>latest</AnalysisLevel>
     <PackageTags>Blazor; Razor; Components; Filter; DropDownList; ASP.NET, Core, CSharp, Web</PackageTags>
+    <Version>1.1.1</Version>
+    <Authors>Huciko</Authors>
+    <PackageProjectUrl>https://github.com/Huciko/FilterDropDownList.Blazor</PackageProjectUrl>
+    <PackageIcon>packIcon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,6 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="packIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

@@ -1,7 +1,15 @@
 
 # FilterDropDownList.Blazor
 
-A simple filterable dropdown list for Blazor applications.
+A filterable dropdown list component for Blazor applications.
+
+## Features
+* Filter on multiple properties
+* Uses the Virtualize component for rendering performance
+* Renders when a paramater of the component is updated or when interacting with the component (for performance)
+
+## Limitations
+Currently best displays with Bootstrap
 
 ## Usage/Examples
 
@@ -12,6 +20,7 @@ To avoid having to add using statements for FilterDropDownList.Blazor to lots of
 
 ```razor
 @using FilterDropDownList.Blazor.GenericFilterSelect
+@using FilterDropDownList.Blazor.GenericFilterSelect.Models;
 ```
 
 #### Basic Usage

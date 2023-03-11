@@ -1,20 +1,4 @@
-﻿:root {
-    /* Secondary Button */
-    --vcare-btn-secondary-bg-color: 26,169,184;
-
-    --vcare-btn-color-opacity: 1;
-    --vcare-btn-bg-color-opacity: 1;
-    --vcare-btn-color: 255,255,255;
-   
-}
-
-[data-bs-theme=dark] {
-    --vcare-btn-color-opacity: 0.8;
-    --vcare-btn-bg-color-opacity: 0.7;
-}
-
-
-body .search-dropdown-pop-active-fixed-bg {
+﻿body .search-dropdown-pop-active-fixed-bg {
     position: fixed;
     background: #a1a1a159;
     width: 100vw;
@@ -102,8 +86,8 @@ body .search-dropdown-pop-active-fixed-bg {
 
 .search-select-component .dropdown li:hover,
 .search-select-component .dropdown li.active {
-    background-color: rgba(var(--vcare-btn-secondary-bg-color), var(--vcare-btn-bg-color-opacity));
-    color: rgba(var(--vcare-btn-color), var(--vcare-btn-color-opacity));
+    background-color: rgba(26,169,184, 1);
+    color: rgba(255,255,255, 1);
 }
 
 .search-select-component .dropdown-menu {
@@ -177,26 +161,5 @@ body .search-dropdown-pop-active-fixed-bg {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-
-[data-bs-theme=dark] .search-select-component .dropdown-toggle {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-}
-
-
-[data-bs-theme=dark] .search-select-component .dropdown li:hover,
-[data-bs-theme=dark] .search-select-component .dropdown li.active {
-    background-color: rgba(var(--vcare-btn-secondary-bg-color), var(--vcare-btn-bg-color-opacity));
-    color: rgba(var(--vcare-btn-color), var(--vcare-btn-color-opacity));
-}
-
-
-[data-bs-theme=dark] .dropdown-input {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%23ffffff' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
-}
-
-[data-bs-theme=dark] .search-select-component .dropdown-menu {
-    box-shadow: 0px 12px 30px rgb(0 0 0 / 60%);
 }
 
