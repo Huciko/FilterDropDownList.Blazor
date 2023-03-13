@@ -11,10 +11,11 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <AnalysisLevel>latest</AnalysisLevel>
     <PackageTags>Blazor; Razor; Components; Filter; DropDownList; ASP.NET, Core, CSharp, Web</PackageTags>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <Authors>Huciko</Authors>
     <PackageProjectUrl>https://github.com/Huciko/FilterDropDownList.Blazor</PackageProjectUrl>
     <PackageIcon>packIcon.png</PackageIcon>
+    <PackageReleaseNotes>Bootstrap dependency removed</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

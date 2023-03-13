@@ -8,7 +8,7 @@
 
             <div @onmousedown:stopPropagation="true" class="dropdown">
                 @{
-                    <button @onmousedown="ToggleDropdown" class="btn btn-sm dropdown-toggle form-floating" type="button" disabled="@Disabled">
+                    <button @onmousedown="ToggleDropdown" class="dropdown-toggle form-floating" type="button" disabled="@Disabled">
                         <span class="search-select-selected">@(ReferenceEquals(BindValue, NoItemSelectedItem) ? RenderFragmentInitialSelectText() : RowTemplate(BindValue))</span>
                         <span class="label">@Label</span>
                     </button>
