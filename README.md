@@ -8,9 +8,6 @@ A filterable dropdown list component for Blazor applications.
 * Uses the Virtualize component for rendering performance
 * Renders when a paramater of the component is updated or when interacting with the component (for performance)
 
-## Limitations
-Currently best displays with Bootstrap
-
 ## Usage/Examples
 
 Install form [NuGet](https://www.nuget.org/packages/FilterDropDownList.Blazor/)
